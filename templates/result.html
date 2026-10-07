@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #4d0000, #1a0000);
+            font-family: 'Poppins';
+            text-align: center;
+            color: white;
+        }
+
+        .box {
+            width: 500px;
+            margin: 80px auto;
+            background: rgba(255,255,255,0.18);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(8px);
+        }
+
+        img {
+            width: 200px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        a.btn {
+            background: #ff0033;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 15px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: .3s;
+        }
+
+        a.btn:hover {
+            transform: scale(1.08);
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>Blood Group Prediction</h2>
+
+    <img src="/static/uploads/{{ filename }}" alt="Fingerprint">
+
+    <h3>Predicted Group: <b>{{ prediction }}</b></h3>
+
+    <a class="btn" href="/upload">Try Another</a>
+</div>
+
+</body>
+</html>
+

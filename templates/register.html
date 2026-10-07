@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #8b0000, #330000);
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        .box {
+            width: 400px;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            margin: 100px auto;
+            border-radius: 15px;
+            backdrop-filter: blur(8px);
+        }
+
+        input, button {
+            width: 90%;
+            padding: 12px;
+            margin-top: 15px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        button {
+            background: #ff0022;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        button:hover {
+            transform: scale(1.08);
+        }
+
+        a { color: #ffbbbb; }
+    </style>
+</head>
+
+<body>
+<div class="box">
+    <h2>Create Account</h2>
+
+    <form method="POST">
+        <input type="text" name="username" placeholder="Username" required>
+
+        <input type="email" name="email" placeholder="Email ID" required>
+
+        <input type="password" name="password" placeholder="Password" required>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <p>Already registered? <a href="/login">Login</a></p>
+</div>
+</body>
+</html>
