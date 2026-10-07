@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood Group Detection</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #b30000, #660000);
+            color: white;
+        }
+
+        .top-right {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+        }
+
+        .top-right a {
+            color: #ffdddd;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .container {
+            margin-top: 120px;
+            background: rgba(255, 255, 255, 0.12);
+            padding: 50px;
+            border-radius: 20px;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            backdrop-filter: blur(8px);
+        }
+
+        h1, h2 {
+            animation: bounce 1.2s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from { transform: translateY(0px); }
+            to { transform: translateY(-8px); }
+        }
+
+        a.button {
+            display: inline-block;
+            background: #ff0040;
+            padding: 14px 35px;
+            color: white;
+            border-radius: 30px;
+            font-size: 18px;
+            margin-top: 20px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        a.button:hover {
+            background: #ff6680;
+            transform: scale(1.1);
+        }
+
+        ul {
+            text-align: left;
+            width: 70%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="top-right">
+    <a href="/register">Register</a>
+</div>
+
+<div class="container">
+    <h1>Welcome</h1>
+    <h2>Blood Group Detection Using Fingerprint</h2>
+
+    <h3>Terms & Conditions</h3>
+    <ul>
+        <li>Upload clear fingerprint images only</li>
+        <li>Use JPG or PNG format</li>
+        <li>Must be noise-free and centered</li>
+        <li>Highly rotated images may reduce accuracy</li>
+    </ul>
+
+    <a class="button" href="/login">Proceed to Login</a>
+</div>
+
+</body>
+</html>
